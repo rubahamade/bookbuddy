@@ -6,10 +6,14 @@ const Books = ({books}) => {
     return(
         <div className='container'>
 
-            <h1>Books</h1>
+            <h1>Books List</h1>
             
-            <h3>Search:</h3>
+
+            <div className="searchbar">
+            <p>Search Books</p>
             <Searchbar books={books} />
+
+            </div>
 
             <ul>
                 {

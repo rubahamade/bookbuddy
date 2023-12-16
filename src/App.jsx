@@ -61,7 +61,12 @@ function App() {
  
   return (
     <>
-    <h1><img id='logo-image' src={bookLogo}/><Link to='/'>Library App</Link></h1>
+    <div className="top">
+      <div className="logo">
+      <h1><img id='logo-image' src={bookLogo}/><Link to='/'>Library App</Link></h1>
+      </div>
+    </div>
+
     <Navigations user={user}/>
     <Routes>
       <Route path='/' element={<Homepage user={user} />}/>

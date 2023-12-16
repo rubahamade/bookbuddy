@@ -9,7 +9,8 @@ const Searchbar = ({books}) => {
     })
 
     return (
-        <div>
+        
+        <div className="searchlistitems">
             <label>
                 <input type="text" value={searchtitle} onChange={(event) => {setSearchtitle(event.target.value)}} />
             </label>
@@ -17,11 +18,11 @@ const Searchbar = ({books}) => {
             {
                 searchtitle.length > 0 ?
                 <div>
-                    <h3>Viewing {filteredtitles.length} books of {books.length}</h3>
+                    <h3 className="searchlisttitle">(Viewing {filteredtitles.length} books of {books.length})</h3>
 
-                    <ul>
+                    <ul >
                         {filteredtitles.map((book) => {
-                            return <li key={book.id}><Link to={`/books/${book.id}`}>{book.title}</Link></li>
+                            return <li key={book.id} ><Link to={`/books/${book.id}`}>{book.title}</Link></li>
                         })}
                     </ul>
                 </div>
@@ -29,6 +30,7 @@ const Searchbar = ({books}) => {
                 : null
             }
         </div>
+        
     )
 
 

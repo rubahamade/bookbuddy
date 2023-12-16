@@ -5,6 +5,8 @@ body {
   padding: 0;
 }
 
+a { text-decoration: none;}
+
 #logo-image {
   width: 30px;
   margin-right: 10px;
@@ -12,15 +14,37 @@ body {
 
 /* Add your own custom styles here */
 
+h2{ text-align: center; margin-top: 5em; font-size: 200%;}
+.top{width:100%; height:5em;margin-left: auto; margin-right: auto;}
+.logo { margin-left: auto; margin-right: auto; }
+.logo h1{text-align: center; color: white; font-size: 200%;}
+.logo h1 a {color: black;}
 .container{ width:80%; margin-left: auto; margin-right: auto; margin-top: 2em;}
+.container h1{ text-align: center;}
 .container img {width:50%;}
-.availability{margin-top: 0em; text-transform: capitalize;}
+.availability{margin-top: 0.5em; text-transform: capitalize; font-size: 90%; color:#9B9B9B; }
 .bookname{margin-top: 1em;}
+
+.container ul {list-style-type: none; text-align: center;}
+.container ul li {margin-bottom: 2em; font-size: 120%;list-style-type: none; }
+.container a {color: black; font-weight: bold;}
+
+.searchbar{ width:40%; margin-left: auto; margin-right: auto; margin-bottom: 3em;}
+.searchbar{text-align: center; font-weight:normal; }
+input{width:100%; border-radius: 1em; height: 2em; border:none; font-size: 110%; text-align: center; background-color: #E3E5E8; margin-bottom: 1em; }
+.searchbar p {margin-top: 3em;}
+.searchlisttitle {text-transform: none;}
+.searchlistitems{text-transform: none; font-size: 90%;}
+
+.searchlistitems ul{ padding: 0;}
+.searchlistitems ul li a { margin-bottom: 0; margin-top: 0; font-weight: normal; }
+.searchlistitems ul li {list-style-type: none; margin-bottom:1em; padding: 0; font-weight: normal; }
+
 
 nav{
   display: flex;
   justify-content: space-around;
-  background-color: lightgreen;
+  background-color: black;
 }
 
 nav span{
@@ -29,7 +53,7 @@ nav span{
 }
 
 nav a{
-  padding: 1rem;
+  padding: 1rem; color: white; font-size: 120%;
 }
 
 .registerForm {
