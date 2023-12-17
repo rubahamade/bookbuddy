@@ -12,6 +12,7 @@ import Homepage from './components/Homepage'
 
 import Singlebook from './components/Singlebook'
 import Searchbar from './components/Searchbar'
+import About from './components/About'
 
 
 function App() {
@@ -70,6 +71,7 @@ function App() {
     <Navigations user={user}/>
     <Routes>
       <Route path='/' element={<Homepage user={user} />}/>
+      <Route path='/about' element={<About user={user} />}/>
       <Route path='/successReg' element={<SuccessRegi />}/>
       <Route path='/books' element={<Books books={books} />}/>
 

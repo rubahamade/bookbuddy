@@ -47,27 +47,38 @@ const Singlebook = ({books, user, setUser}) => {
     }
     else {
         return (
-        <div className="container">
+        <div className="containertwo">
             <Link to='/books'>
                 Back to all books
             </Link>
 
-           <div className="availability">
+
+            
+            <div className="center">
+           <div className="availabilitytwo">
            {singlebook.available === true ? "available" : "unavailable"}
            </div>
 
            
             
            <div>
-                <button disabled = {(singlebook.available && id) ? false : true } onClick={handleclick}>Checkout</button>
+                <button disabled = {(singlebook.available && id) ? false : true } onClick={handleclick}>Checkout Book</button>
                 
             </div>
-    
+
+            </div>
            
             <h1>{singlebook.title}</h1>
-            <h2>{singlebook.author}</h2>
+
+            
+
+
+            <h2 className="author">{singlebook.author}</h2>
             <p>{singlebook.description}</p>
+
+            
             <img src={singlebook.coverimage} />
+            
         </div>
         )
     }

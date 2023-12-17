@@ -69,7 +69,7 @@ else {
             <h1>Account</h1>
             <button onClick={() => {logout()}}>Logout</button>
             <hr/>
-            <h2>Email: {user.email}</h2>
+            <h2 className="userinfo">Email: {user.email}</h2>
             <h4>Checked Out Books:</h4>
 
             <ul>
